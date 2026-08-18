@@ -1,62 +1,96 @@
 # Projeto Final - DankiCode
 
-Bem-vindo ao Projeto Final do Curso de Frontend 2! Este repositório contém a aplicação web desenvolvida como parte do curso, com o objetivo de proporcionar uma experiência interativa e educativa para os usuários.
+Landing page responsiva desenvolvida como projeto final do curso Frontend 2 da Danki Code. A página apresenta uma agência digital fictícia, seus diferenciais, benefícios, depoimentos e um formulário de contato.
 
 ## Demonstração
 
-Você pode acessar a versão ao vivo da aplicação em: [DankiCode](https://lfbond.github.io/projetoFinal_cursoFrontEnd2_DankiCode/)
+A versão publicada está disponível no GitHub Pages:
 
-## Tecnologias Usadas
-
-- **HTML5**: Estrutura e marcação do conteúdo.
-- **CSS3**: Estilização e design responsivo.
-- **JavaScript**: Interatividade e manipulação do DOM.
-- **React**: Biblioteca para construção da interface de usuário.
-
-## Imagem do Site:
-
-![Captura de Tela (44)](https://user-images.githubusercontent.com/69223872/166518039-55cf8fb9-8cb1-4c85-8e04-3ddcd6633dd0.png)
-![Captura de Tela (45)](https://user-images.githubusercontent.com/69223872/166518049-c8ac24b5-7f9b-47c2-a12f-25a074b97fe2.png)
-![Captura de Tela (46)](https://user-images.githubusercontent.com/69223872/166518051-5ea3ea28-31e3-42af-bf19-2dc9fbf446e4.png)
-![Captura de Tela (47)](https://user-images.githubusercontent.com/69223872/166518055-71a4f4f0-db1e-4aa2-a8cc-c81b6660308d.png)
-![Captura de Tela (48)](https://user-images.githubusercontent.com/69223872/166518058-4a46ac23-e7e5-4c75-be23-35b4a2c616b2.png)
+<https://lfbond.github.io/projetoFinal_cursoFrontEnd2_DankiCode/>
 
 ## Funcionalidades
 
-- Interface amigável e fácil de navegar.
-- Exibição dinâmica de dados e informações.
-- Design responsivo para uma experiência otimizada em dispositivos móveis e desktops.
+- Navegação por âncoras entre as seções da página.
+- Menu desktop e menu mobile com abertura e fechamento responsivos.
+- Seção de apresentação com chamada para ação.
+- Exibição de marcas e benefícios da agência.
+- Carrossel automático de depoimentos com navegação adaptada para telas menores.
+- Formulário visual de contato.
+- Layout responsivo para desktops, tablets e celulares.
 
-## Instalação
+## Tecnologias e bibliotecas
 
-Para rodar o projeto localmente, siga os passos abaixo:
+- **HTML5** para a estrutura semântica da página.
+- **CSS3** para layout, cores, tipografia, imagens de fundo e responsividade.
+- **JavaScript** para os comportamentos da interface.
+- **jQuery** para manipulação do DOM e eventos do menu mobile.
+- **Slick Carousel** para o carrossel de depoimentos.
+- **Font Awesome** e **Google Fonts** carregados por CDN no HTML.
+
+O projeto não utiliza React, Node.js, gerenciador de pacotes ou etapa de compilação. As bibliotecas JavaScript ficam versionadas diretamente na pasta `js/`.
+
+## Pré-requisitos
+
+Para visualizar a página, basta ter um navegador moderno. Para uma experiência de desenvolvimento mais prática, recomenda-se usar o [Visual Studio Code](https://code.visualstudio.com/) com uma extensão de servidor local, como o Live Server.
+
+## Como executar localmente
 
 1. Clone o repositório:
+
    ```bash
    git clone https://github.com/lfbond/projetoFinal_cursoFrontEnd2_DankiCode.git
    ```
 
-2. Navegue até o diretório do projeto:
+2. Entre na pasta do projeto:
+
    ```bash
    cd projetoFinal_cursoFrontEnd2_DankiCode
    ```
 
-3. Instale as dependências (se aplicável):
-   ```bash
-   npm install
-   ```
+3. Abra o arquivo `index.html` diretamente no navegador ou inicie um servidor local.
 
-4. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm start
-   ```
+   Com o Live Server, clique com o botão direito em `index.html` e selecione **Open with Live Server**. A página será aberta em um endereço local semelhante a `http://127.0.0.1:5500`.
 
-Agora você pode acessar a aplicação em `http://localhost:3000`.
+Não é necessário executar `npm install` ou `npm start`.
+
+## Estrutura do projeto
+
+```text
+.
+├── index.html                 # Página principal e conteúdo das seções
+├── css/
+│   └── style.css              # Estilos e regras responsivas
+├── img/                       # Logos, ícones, fundos e imagens da página
+└── js/
+    ├── jquery.js              # Biblioteca jQuery incluída localmente
+    ├── menu-responsivo.js     # Comportamento do menu mobile
+    ├── slick.min.js            # Biblioteca do carrossel
+    └── slider.js               # Configuração dos depoimentos
+```
+
+## Personalização
+
+- Edite o conteúdo, os textos e as âncoras diretamente no `index.html`.
+- Altere cores, espaçamentos e breakpoints em `css/style.css`.
+- Substitua os arquivos da pasta `img/` para atualizar a identidade visual.
+- Ajuste quantidade de slides, autoplay e comportamento mobile em `js/slider.js`.
+- Se o formulário precisar enviar dados de verdade, configure um endpoint no atributo `action` e implemente o tratamento no servidor ou em um serviço de formulários.
+
+## Publicação
+
+Como o projeto é uma página estática, ele pode ser hospedado em serviços como GitHub Pages, Netlify ou Vercel. Para o GitHub Pages, publique a branch que contém o `index.html` na raiz do repositório e selecione a pasta correspondente nas configurações de Pages.
 
 ## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um "issue" ou enviar um "pull request" para melhorar o projeto.
+1. Crie uma branch para sua alteração:
+
+   ```bash
+   git checkout -b minha-melhoria
+   ```
+
+2. Faça a alteração e teste a página em diferentes tamanhos de tela.
+3. Abra um pull request descrevendo o que foi alterado e como validar.
 
 ## Licença
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Este projeto foi criado para fins educacionais no curso da Danki Code. Não há um arquivo de licença formal no repositório; confirme os termos com o mantenedor antes de reutilizar os materiais ou publicar uma versão derivada.
